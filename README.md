@@ -1,20 +1,16 @@
 # Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student
-
 ## AIM:
 To write a program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
-
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
-
 ## Algorithm
 1. import required python library
 2. load the data set and do the necessary preprocessing steps
 3. use lable encoder to convert string into integer
 4. split the data for training and testing
 5. use logisticregression to do the classification 
-
-## Program and Output:
+## Program:
 ```
 /*
 Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
@@ -24,12 +20,10 @@ RegisterNumber:  212223240182
 import numpy as np
 import pandas as pd
 data=pd.read_csv('Placement_data.csv')
-
 d1=data.copy()
 data=data.drop(["sl_no","salary"],axis=1)
 
 data.isnull().sum()
-
 data.duplicated().sum()
 
 from sklearn.preprocessing import LabelEncoder
